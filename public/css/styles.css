@@ -1,0 +1,151 @@
+html{
+    font-family: arial;
+    height: 100%;
+}
+
+body{
+    background:url('/img/clouds.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content {
+    flex-grow: 1;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+header {
+    color:white;
+    font-family: 'Raleway',sans-serif;
+    margin-top: 86px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 20px;
+}
+a{
+    color:blueviolet;
+    margin-right: 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+
+#quote{
+    text-align: center;
+    color:rgb(243, 171, 14);
+}
+
+form{
+    text-align: center;
+    margin-top:25px;
+}
+#message-1 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#message-2 {
+    color: #ffe600;
+    text-align: center;
+}
+
+footer{
+    color:rgb(117, 204, 160);
+    text-align: center;
+    margin-top:100px;
+}
+
+
+.portrait{
+    width: 200px;
+    border-radius: 50%;
+    border:2px solid grey;
+}
+#web{
+    text-align: center;
+    color:rgb(13, 245, 52);
+    margin-top:40px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#web1{
+    text-align: center;
+    color:rgb(13, 245, 52);
+    border:1px solid grey;
+    padding:5px;
+    margin-top:20px;
+}
+
+input{
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+button{
+    cursor: pointer;
+    border:1px solid #888;
+    background: #888;
+    color: white;
+    padding: 12px;
+}
+#help{
+    margin-top: 70px;
+    text-align: center;
+    font-size:20px;
+    color:ghostwhite;
+}
+#help1{
+    text-align: center;
+    font-size:20px;
+    color:ghostwhite;
+}
+
+
+@media(max-width: 60rem) {
+    html{
+        height:100%;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    a{
+        color:blue;
+        font-size:25px;
+    }
+    #web{
+        color:black;
+    }
+    #web1{
+        color:black;
+    }
+    #quote{
+        color:black;
+    }
+    #help{
+        color:black;
+    }
+    #help1{
+        color:black;
+    }
+    #message-2{
+        color:black;
+    }
+    footer{
+        color:blue;
+    }
+}

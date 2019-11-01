@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="icon" type="image/gif" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+
+            <p id='quote'>Enter ur location in the below provided box !!</p>
+
+            <form action="/weather" method="POST">
+                <input id="location" class="input-location" placeholder="Location">
+                <button>Search</button>
+            </form>
+
+
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+        
+
+        {{>footer}}
+
+    </body>
+     <script src="js/app.js"></script>
+     <script>
+    function activatePlacesSearch() {
+        let input = document.getElementById("location");
+        let autocomplete = new google.maps.places.Autocomplete(input);
+    }
+    </script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlY4m7UgzhJn2_0vt7L2VAatstYAW-Wyg&libraries=places&callback=activatePlacesSearch">
+    </script>
+
+
+
+</html>
